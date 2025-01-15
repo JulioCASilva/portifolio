@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Portfólio Dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/projetos.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}" class="logo">Portfólio</a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'projetos' %}">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projetos">
+        <div class="container">
+            <div class="grid">
+                <div class="projeto-card">
+                    <img src="{% static 'images/projeto1.png' %}" alt="Automação do sistema web">
+                    <div class="content">
+                        <h3>Automação do sistema web</h3>
+                        <p>Automação completa de um sistema web utilizando o Robot Framework.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/JulioCASilva/test_robotframework" target="_blank">Ver no GitHub</a>
+                            <a href="https://projeto-um-link.com" target="_blank">Acessar Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="{% static 'images/robotframework.svg' %}" alt="Automação de API">
+                    <div class="content">
+                        <h3>Automação de API</h3>
+                        <p>Criação de testes automatizados para APIs RESTful com validações avançadas.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/JulioCASilva/test_api" target="_blank">Ver no GitHub</a>
+                            <a href="https://projeto-dois-link.com" target="_blank">Acessar Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="{% static 'images/projeto3.png' %}" alt="Projeto Portfólio">
+                    <div class="content">
+                        <h3>Projeto Portfólio</h3>
+                        <p>Desenvolvimento de um sistema de portfólio utilizando Django e boas práticas de desenvolvimento web.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/JulioCASilva/project_portifolio" target="_blank">Ver no GitHub</a>
+                            <a href="https://projeto-tres-link.com" target="_blank">Acessar Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="{% static 'images/projeto4.png' %}" alt="Projeto Exemplo">
+                    <div class="content">
+                        <h3>Back-end</h3>
+                        <p>Desenvolvido para aprender novas tecnologias com django.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/JulioCASilva/projeto_exemplo" target="_blank">Ver no GitHub</a>
+                            <a href="https://projeto-quatro-link.com" target="_blank">Acessar Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

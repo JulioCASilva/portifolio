@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}" class="logo">Portifólio</a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'projetos' %}">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Júlio César Arruda</h2>
+        <div class="sobre-container">
+            <div class="sobre-foto">
+                <img src="{% static 'images/fotos.jpeg' %}" alt="Minha Foto">
+                <p class="descricao-foto">
+                    Meu nome é Julio César, sou de Recife-PE e tenho alguns hobbies que fazem parte do meu dia a dia. Gosto de pescar, passar tempo com meus amigos e me dedicar ao treino de musculação. 
+                    Já corri 15 km e participei de algumas corridas, 
+                    o que sempre me desafia a ir além.
+                </p>
+            </div>
+            <div class="timeline"> 
+                <div class="timeline-item">
+                    <h3>Estagiário Quality Assurance (QA) - Avantia wesafer</h3>
+                    <p>Abril 2024 - Atual</p>
+                    <p>Experiência com robotframework, testes em aplicações Web, Mobile e API, criação de suites de testes, mantendo sempre a qualidade do sistema
+                        para o usuário final.</p>
+                    <ul class="tech-icons">
+                        <li><i class="fab fa-azure"></i>Azure DevOps</li>
+                        <li><i class="fas fa-teams"></i>Teams</li>
+                        <li><i class="fas fa-py"></i>Python</li>
+                        <li><i class="fas fa-sl"></i>Seleinum</li>
+                        <li><i class="fas fa-robot"></i>Robotframework</li>
+                        <li><i class="fas fa-graf"></i>Grafana</li>
+                        <li><i class="fas fa-git"></i>Git</li>
+                        <li><i class="fas fa-git"></i>Java</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Aprendiz Quality Assurance (QA) - Avantia wesafer</h3>
+                    <p>Dezembro 2022 - Abril 2024</p>
+                    <p>Report de bugs e possíveis melhorias para as aplicações utilizando o Azure devops.</p>
+                    <ul class="tech-icons">
+                        <li><i class="fab fa-azure"></i> Azure DevOps</li>
+                        <li><i class="fas fa-teams"></i> Teams</li>
+                        <li><i class="fas fa-graf"></i> Grafana</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
